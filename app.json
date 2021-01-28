@@ -1,11 +1,11 @@
 {
   "name": "umlbot",
   "description": "UML genrator bot for Slack on top PlantUML",
-  "repository": "https://github.com/taichi/umlbot",
+  "repository": "https://github.com/vlsav/umlbot",
   "keywords": ["java8", "siden", "uml"],
   "buildpacks": [
     {
-      "url": "https://github.com/weibeld/heroku-buildpack-graphviz.git"
+      "url": "https://github.com/vlsav/heroku-buildpack-graphviz.git"
     },
     {
       "url": "https://github.com/heroku/heroku-buildpack-gradle"
@@ -23,7 +23,7 @@
       "value": "production"
     },
     "GRAPHVIZ_DOT": {
-      "description": "graphviz install dir. see https://github.com/weibeld/heroku-buildpack-graphviz-src/blob/master/bin/compile",
+      "description": "graphviz install dir. see https://github.com/vlsav/heroku-buildpack-graphviz-src/blob/master/bin/compile",
       "value": "/app/vendor/graphviz/bin/dot"
     }
   }
